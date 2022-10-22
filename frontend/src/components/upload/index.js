@@ -1,9 +1,25 @@
 import React, {useState} from "react";
 import "./upload.css";
+import axios from 'axios';
 
 function Upload() {
   const [allergy, setAllergy] = useState("");
   const [nutritionLabel, setNutritionLabel] = useState(null);
+
+  const handleSubmit = async(event) => {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append("nutritionLabel", nutritionLabel);
+    formData.append("allergies", allergy);
+    axios({
+        method: "post",
+        url: "/api/process",
+        data: formData,
+        headers: { "Content-Type": "multipart/form-data" },
+    })
+    .then(response => response.json())
+    .catch(error => console.log(error))
+  }
 
   return (
     <div class="form-container" id = "upload">
