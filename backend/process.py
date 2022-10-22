@@ -50,4 +50,12 @@ def process(allergyString, filename):
     if (len(returnArr) == 0):
         return "Congratulations! You can eat this food!"
     else:
-        return ""
+        returnString = "You are allergic to the following things: "
+        for i in range(len(returnArr)):
+            returnString += returnArr[i]
+            if (i < len(returnArr) - 1):
+                returnString += ","
+            else:
+                returnString += "."
+        return returnString
+
