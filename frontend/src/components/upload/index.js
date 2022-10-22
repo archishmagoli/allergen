@@ -4,7 +4,7 @@ import "./upload.css";
 function Upload() {
   const [allergy, setAllergy] = useState("");
   const [nutritionLabel, setNutritionLabel] = useState(null);
-  const [isAllergic] = useState(false);
+
   return (
     <div class="form-container" id = "upload">
       <form class="upload-box">
@@ -31,12 +31,6 @@ function Upload() {
           Submit
         </button>
       </form>
-      {isAllergic &&
-        <h1>Unfortunately, this product contains {allergy}.</h1>
-      }
-      {!isAllergic &&
-        <h1>YES! This food is safe to eat.</h1>
-      }
     </div>
   );
 }
