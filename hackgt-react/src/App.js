@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {/* <Upload/> */}
+    <div className='Sections'>
+    <Upload/>
+    </div>
     </div>
   );
 }
