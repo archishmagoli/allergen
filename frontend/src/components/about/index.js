@@ -1,5 +1,5 @@
 import "./about.css";
-import ReactPlayer from 'react-player/youtube'
+
 const About = () => {
   return (
     <div className="i" id = "about">
@@ -15,9 +15,9 @@ const About = () => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
-        {/* <img src="https://icons.veryicon.com/png/o/food--drinks/vegetable-icon/tomato-14.png" alt="" className="i-img" /> */}
-        {/* <ReactPlayer url='https://www.youtube.com/watch?v=ODGiU01yTAM&ab_channel=Flamingo' className="i-img" /> */}
+        <div className="i-bg">
+          
+        </div>
       </div>
     </div>
   );
