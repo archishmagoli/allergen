@@ -4,7 +4,6 @@ function Footer() {
   return (
     <div className='footer' id = 'footer'>
         <strong><em>We strive to save lives.</em></strong>
-        
     </div>
   )
 }

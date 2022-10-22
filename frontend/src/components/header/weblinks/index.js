@@ -13,11 +13,6 @@ function Weblinks() {
                     Upload
                 </a> 
             </div>
-            <div className="web-links">
-                <a href="#footer">
-                    Contact
-                </a>   
-            </div>
         </div>
     )
 }
