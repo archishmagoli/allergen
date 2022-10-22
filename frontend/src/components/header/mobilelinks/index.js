@@ -19,11 +19,6 @@ function MobileLinks({show, setShow}) {
                         Upload
                     </a> 
                 </div>
-                <div className="mobile-links">
-                    <a href="#footer">
-                        Contact
-                    </a>   
-                </div>
             </div>
         </div>
     )
