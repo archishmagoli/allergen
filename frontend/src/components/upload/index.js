@@ -13,17 +13,17 @@ function Upload() {
     formData.append("allergies", allergy);
     axios({
         method: "post",
-        url: "/api/process",
+        url: "/process",
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
     })
-    .then(response => response.json())
+    .then(response => console.log(response))
     .catch(error => console.log(error))
   }
 
   return (
     <div class="form-container" id = "upload">
-      <form class="upload-box">
+      <form class="upload-box" encType="multipart/form-data" onSubmit={handleSubmit}>
       <h1 id="form-label">Is your food safe to eat?</h1>
         <input
           id="allergy"

@@ -6,7 +6,7 @@
 .pnp.js
 
 # backend
-backend/env
+backend/.venv
 backend/__pycache__
 
 # testing
