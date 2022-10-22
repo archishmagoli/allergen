@@ -3,6 +3,9 @@
     height: 100vh;
   }
   
+  .i-desc {
+    font-size: 20px;
+  }
   .i-left {
     flex: 1;
     display: flex;
@@ -16,33 +19,18 @@
   }
   
   .i-left-wrapper {
-    padding: 50px;
+    padding: 30px;
     height: 50%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
   .i-intro {
-    font-size: 60px;
+    color: #59b256;
+    font-size: 50px;
     font-weight: 300;
   }
 
-  .i-title-item {
-    height: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #59b256;
-    display: flex;
-    align-items: center;
-  }
-  
-  .i-scroll {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 20px;
-  }
   
   .i-img {
     width: 100%;
@@ -60,6 +48,7 @@
     top: 0;
     right: 0;
   }
+  
   
   @media screen and (max-width: 480px) {
     .i {

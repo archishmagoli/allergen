@@ -6,7 +6,7 @@ function Upload() {
   const [nutritionLabel, setNutritionLabel] = useState(null);
   const [isAllergic] = useState(false);
   return (
-    <div class="form-container">
+    <div class="form-container" id = "upload">
       <form class="upload-box">
       <h1 id="form-label">Is your food safe to eat?</h1>
         <input
