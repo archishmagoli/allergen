@@ -1,0 +1,38 @@
+.mobile {
+    background-color: #C4DEA4;
+    height: 100vh; 
+    width: 60vw; 
+    position: fixed;
+    right: 0px;
+    top: -6px;
+    padding: 10px 12px;
+    flex-direction: column;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.all-mobile-links {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.mobile-links {
+    font-size: 24px;
+    margin: 12px 0px; 
+    display:flex
+}
+
+.mobile-links a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
