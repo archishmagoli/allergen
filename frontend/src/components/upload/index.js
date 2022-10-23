@@ -5,7 +5,7 @@ import axios from 'axios';
 function Upload() {
   const [allergy, setAllergy] = useState("");
   const [nutritionLabel, setNutritionLabel] = useState(null);
-  const [output, getOutput] = useState('');
+  const [output, setOutput] = useState('');
 
   const handleSubmit = async(event) => {
     event.preventDefault();
@@ -18,7 +18,7 @@ function Upload() {
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
     })
-    .then(response => console.log(response))
+    .then(response => setOutput(response))
     .catch(error => console.log(error))
   }
 
@@ -47,6 +47,7 @@ function Upload() {
           Submit
         </button>
       </form>
+      <div><p>{output["data"]}</p></div>
     </div>
   );
 }

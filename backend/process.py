@@ -15,14 +15,6 @@ def process(allergyString, filename):
             allergyArr[i] = engine.singular_noun(allergyArr[i])
 
     image = Image.open(filename)
-    hi = '''width = image.width
-    height = image.height
-    image = image.crop((0,height * 0.65, width, height))
-
-    height_percent = (height / float(image.size[1]))
-    width_size = int((float(image.size[0]) * float(height_percent)))
-    image = image.resize((2 * width_size,height))
-    image1 = np.array(image)'''
 
     text = pytesseract.image_to_string(image)
     text = text.replace('\n', ' ')
