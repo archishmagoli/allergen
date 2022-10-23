@@ -6,6 +6,7 @@ function Upload() {
   const [allergy, setAllergy] = useState("");
   const [nutritionLabel, setNutritionLabel] = useState(null);
   const [output, setOutput] = useState('');
+  const [showResults, setShowResults] = useState(false);
 
   const handleSubmit = async(event) => {
     event.preventDefault();
@@ -18,14 +19,22 @@ function Upload() {
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
     })
-    .then(response => setOutput(response))
+    .then(response => setOutput(response), setShowResults(true))
     .catch(error => console.log(error))
   }
 
+  const Results = () => (
+    <div id="output">
+      <h2>{output['data']}</h2>
+    </div>
+  )
+
   return (
-    <div class="form-container" id = "upload">
+    <div class="form-container" id ="upload">
       <form class="upload-box" encType="multipart/form-data" onSubmit={handleSubmit}>
       <h1 id="form-label">Is your food safe to eat?</h1>
+      <h2 id="form-input">Input your list of allergies as comma-separated values.</h2>
+      <h3 id="example">Example: "eggs,canola oil,cheese"</h3>
         <input
           id="allergy"
           class="form-field"
@@ -47,7 +56,9 @@ function Upload() {
           Submit
         </button>
       </form>
-      <div><p>{output["data"]}</p></div>
+      <div>
+        { showResults ? <Results /> : null }
+      </div>
     </div>
   );
 }
