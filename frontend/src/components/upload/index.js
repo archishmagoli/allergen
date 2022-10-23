@@ -5,6 +5,7 @@ import axios from 'axios';
 function Upload() {
   const [allergy, setAllergy] = useState("");
   const [nutritionLabel, setNutritionLabel] = useState(null);
+  const [output, getOutput] = useState('');
 
   const handleSubmit = async(event) => {
     event.preventDefault();
