@@ -11,6 +11,7 @@ function Upload() {
     const formData = new FormData();
     formData.append("nutritionLabel", nutritionLabel);
     formData.append("allergies", allergy);
+    console.log([...formData]);
     axios({
         method: "post",
         url: "/process",
@@ -40,8 +41,7 @@ function Upload() {
           type="file"
           placeholder="Nutritional Label"
           name="nutritionallabel"
-          value={nutritionLabel}
-          onChange={(e)=>setNutritionLabel(e.target.value)}
+          onChange={(e) => setNutritionLabel(e.target.files[0])}
         />
         <button class="form-field" type="submit" id="submit-btn">
           Submit
@@ -50,4 +50,5 @@ function Upload() {
     </div>
   );
 }
+
 export default Upload;
