@@ -16,6 +16,5 @@ def main():
     allergies = request.form.get('allergies')
     output = process(allergies, uploaded)
 
-    # return str(uploaded)
-    # return output
+    return output
 

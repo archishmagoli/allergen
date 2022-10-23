@@ -3,6 +3,7 @@ import pytesseract
 import numpy as np
 import inflect 
 import re
+pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
 def process(allergyString, filename):
     allergyArr = allergyString.split(",")
