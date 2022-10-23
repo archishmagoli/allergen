@@ -11,7 +11,6 @@ function Upload() {
     const formData = new FormData();
     formData.append("nutritionLabel", nutritionLabel);
     formData.append("allergies", allergy);
-    console.log([...formData]);
     axios({
         method: "post",
         url: "/process",
