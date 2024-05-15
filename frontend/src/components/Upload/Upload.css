@@ -18,20 +18,20 @@
 }
 
 #output {
-  background-color: #80786C;
-  width: auto;
-  height: 80px;
-  padding: 5px;
-  border-radius: 8px;
-  color: white;
+    background-color: #2e9fb3;
+    width: auto;
+    height: auto;
+    padding: 1vw;
+    width: 100%;
+    color: white;
 }
 
 .upload-box {
-    width: auto;
+    width: 100%;
     padding: 2vw;
+    margin: 2vw;
     height: fit-content;
-    background-color: #80786C;
-    border-radius: 8px;
+    background-color: #80786c;
     display: flex;
     flex-direction: row;
     display: grid;
@@ -43,7 +43,7 @@
   padding: 3vw;
   margin: auto;
   background: #ecebc9;
-  height: 90vh;
+  height: fit-content;
   display: grid;
   place-items: center;
 }
@@ -96,4 +96,9 @@ button:disabled {
     background-color:#6d480d; 
     border: 1px solid rgb(35, 21, 1);
     border-radius: 0.5vw;  
+}
+
+#results-div {
+    width: 100%;
+    border: none;
 }

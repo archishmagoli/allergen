@@ -10,14 +10,14 @@ function App() {
 
   const [data, setData] = useState(null);
 
-  const fetchData = async () => {
-    const response = await axios.get('http://localhost:5000/api');
-    setData(response.data.message);
-  }
+  // const fetchData = async () => {
+  //   const response = await axios.get('http://localhost:5000/api');
+  //   setData(response.data.message);
+  // }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <>

@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     background-color: #F6F6DB;
+    margin-bottom: 3vh;
 }
   
 .i-desc {
@@ -22,8 +23,8 @@
 }
 
 .i-left-wrapper {
-    padding: 30px;
-    height: 50%;
+    padding: 2vw;
+    height: auto;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -39,7 +40,7 @@
     margin-top:130px;
     margin-left:60px;
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 .i-bg {

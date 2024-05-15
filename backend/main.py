@@ -1,12 +1,14 @@
-from flask import Flask, jsonify
+from flask import Flask, request
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app) # allow for cross-origin requests (from the frontend)
 
-@app.route('/api', methods=['GET'])
+@app.route('/process', methods=['POST'])
 def api():
-    return jsonify({'message': 'Hello, World!'})
+    data = request.form['allergies']
+
+    return data
 
 
 if __name__ == '__main__':
