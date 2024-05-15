@@ -34,7 +34,7 @@
 .name {
     display: flex; 
     font-size: 36px; 
-    color: #835b1b; 
+    color: #6d480d; 
     font-weight: 800;
 }
 
@@ -106,13 +106,15 @@
     border-radius: 0.5vw;
     text-decoration: none;
     color: whitesmoke;
+    border: 1px solid rgb(35, 21, 1);
     display: flex;
     align-items: center;
-    transition: background-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
 }
 .web-links a:hover {
     background-color: #034a09;
-    color: white;
+    border-color: whitesmoke;
+    color: whitesmoke;
 }
 .web-links:last-child {
     margin-right: 0;

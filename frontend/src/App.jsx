@@ -4,6 +4,7 @@ import axios from 'axios';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
 import About from './components/About/About.jsx';
+import Upload from './components/Upload/Upload.jsx';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
         {/* {data && <h1>{data}</h1>} */}
         <div className='Sections'>
           <About/>
-          {/* <Upload/> */}
+          <Upload/>
         </div>
 
         <Footer/>
