@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
 
 function App() {
 
@@ -17,7 +19,9 @@ function App() {
 
   return (
     <>
+      <Header />
       {data && <h1>{data}</h1>}
+      <Footer />
     </>
   )
 }

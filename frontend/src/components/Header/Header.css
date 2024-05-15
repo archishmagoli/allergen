@@ -1,0 +1,124 @@
+
+.header {
+    font-family: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex: 1; 
+    position: relative; 
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #C4DEA4;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex: 1; 
+    justify-content: flex-end; 
+}
+
+.links-icon { 
+    font-size: 24px;
+}
+
+.mobilelinks { 
+    display: none;
+}
+
+.weblinks {
+    display: flex; 
+}
+
+.name {
+    display: flex; 
+    font-size: 36px; 
+    color: #835B1B; 
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 720px) {
+    .mobilelinks {
+        display: flex;
+    }
+    .weblinks {
+        display: none;
+    }
+    .name {
+        font-size: 24px;
+    }
+}
+
+.mobile {
+    background-color: #C4DEA4;
+    height: 100vh; 
+    width: 60vw; 
+    position: fixed;
+    right: 0px;
+    top: -6px;
+    padding: 10px 12px;
+    flex-direction: column;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.all-mobile-links {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.mobile-links {
+    font-size: 24px;
+    margin: 12px 0px; 
+    display: flex
+}
+
+.mobile-links a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.web {
+    display:flex;
+    flex: 1; 
+    align-items: center; 
+}
+.web-links {
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 700; 
+}
+
+.web-links a {
+    background-color: #387437;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.25s;
+}
+.web-links a:hover {
+    background-color: #034a09;
+    color: white;
+}
+.web-links:last-child {
+    margin-right: 0;
+}
+.links-icon {
+    display: flex;
+    align-items:center;
+    margin: 4px;
+}
