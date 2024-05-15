@@ -25,9 +25,19 @@ const Upload = () => {
     }
     
     const Results = () => (
-        <div id="output">
-            <h4>You are allergic to the following ingredients: </h4>
-            <p>{output ? output : 'Loading..'}</p>
+        <div className={`output ${output.length > 0 ? 'red' : 'green'}`}>
+            {
+                output && output.length > 0 ?
+                <div> 
+                    <p><b>DO NOT EAT! You are allergic to the following ingredients: </b></p>
+                    <p>{output}</p>
+                </div> : 
+                
+                <div>
+                    <p><b>This product is safe to eat!</b></p>
+                </div>
+            }
+            
         </div>
     )
     

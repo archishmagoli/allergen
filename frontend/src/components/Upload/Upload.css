@@ -17,25 +17,32 @@
   margin-bottom: 0px;
 }
 
-#output {
-    background-color: #2e9fb3;
-    width: auto;
-    height: auto;
-    padding: 1vw;
-    width: 100%;
-    color: white;
+.output {
+  width: auto;
+  height: auto;
+  padding: 1vw;
+  width: 100%;
+  color: white;
+}
+
+.red {
+  background-color: rgb(174, 3, 3);
+}
+
+.green {
+  background-color: #3c8940;
 }
 
 .upload-box {
-    width: 100%;
-    padding: 2vw;
-    margin: 2vw;
-    height: fit-content;
-    background-color: #80786c;
-    display: flex;
-    flex-direction: row;
-    display: grid;
-    place-items: center;
+  width: 100%;
+  padding: 2vw;
+  margin: 2vw;
+  height: fit-content;
+  background-color: #80786c;
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  place-items: center;
 }
 
 .form-container {
@@ -75,30 +82,30 @@ button:disabled {
 }
   
 .text {
-    color: whitesmoke;
-    font-size: auto;
+  color: whitesmoke;
+  font-size: auto;
 }
 
 #nutritional-label {
-    padding: 1vw;
-    font-family: inherit;
-    background-color: #ecebc9;
-    color:#6d480d; 
-    font-weight: bold;
-    font-size: inherit;
-    border-radius: 0.5vw;
+  padding: 1vw;
+  font-family: inherit;
+  background-color: #ecebc9;
+  color:#6d480d; 
+  font-weight: bold;
+  font-size: inherit;
+  border-radius: 0.5vw;
 }
 
 ::-webkit-file-upload-button { 
-    cursor:pointer; 
-    padding: 0.75vw;
-    font-family: inherit;
-    background-color:#6d480d; 
-    border: 1px solid rgb(35, 21, 1);
-    border-radius: 0.5vw;  
+  cursor:pointer; 
+  padding: 0.75vw;
+  font-family: inherit;
+  background-color:#6d480d; 
+  border: 1px solid rgb(35, 21, 1);
+  border-radius: 0.5vw;  
 }
 
 #results-div {
-    width: 100%;
-    border: none;
+  width: 100%;
+  border: none;
 }
