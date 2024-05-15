@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import WebLinks from './WebLinks.jsx';
 import MobileLinks from './MobileLinks.jsx';
-import Icon from './green-leaf-icon.svg';
+import Icon from '../../../public/green-leaf-icon.svg';
 import './Header.css';
 
 const Header = () => {

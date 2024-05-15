@@ -3,6 +3,7 @@ import './App.css'
 import axios from 'axios';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
+import About from './components/About/About.jsx';
 
 function App() {
 
@@ -19,9 +20,17 @@ function App() {
 
   return (
     <>
-      <Header />
-      {data && <h1>{data}</h1>}
-      <Footer />
+      <div className="App">
+        <Header/>
+
+        {/* {data && <h1>{data}</h1>} */}
+        <div className='Sections'>
+          <About/>
+          {/* <Upload/> */}
+        </div>
+
+        <Footer/>
+      </div>
     </>
   )
 }

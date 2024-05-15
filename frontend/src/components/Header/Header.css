@@ -34,7 +34,7 @@
 .name {
     display: flex; 
     font-size: 36px; 
-    color: #835B1B; 
+    color: #835b1b; 
     font-weight: 800;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .mobile {
-    background-color: #C4DEA4;
+    background-color: #c4dEa4;
     height: 100vh; 
     width: 60vw; 
     position: fixed;
