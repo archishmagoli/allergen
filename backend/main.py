@@ -12,7 +12,7 @@ def api():
     pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
     # Get the image from the request
-    image = request.files['image']
+    image = request.files['nutritionLabel']
     image = Image.open(image)
     text = pytesseract.image_to_string(image)
 
