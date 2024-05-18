@@ -1,8 +1,5 @@
-# React + Vite
+# AllerGEN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AllerGEN is web based app that allows people with allergies to scan food nutrition labels to find out if the product contains a specific allergen. All you need to do is take a picture of your nutrition label and upload it onto our upload page. Our website will ask you what to look out for specific to your allergies.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was originally submitted for the HackGT9 Event, and (here)[https://devpost.com/software/allergen-5a7vy0] is the Devpost submission of our project.
