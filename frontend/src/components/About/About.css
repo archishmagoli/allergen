@@ -1,6 +1,7 @@
 .i {
     display: flex;
     height: 100vh;
+    width: 99vw;
     background-color: #F6F6DB;
     margin-bottom: 3vh;
 }
