@@ -9,4 +9,4 @@ I've gone back and tinkered with this project a bit more! I've now deployed the 
 
 Unfortunately, since I'm using the Free tier of Render's services, the API requests to the backend take a *really* long time to resolve. *However*, I've tested the backend using [Postman](https://postman.com), and I promise it works! For better performance, we will need more compute power.
 
--- Archie 😊
+- Archie 😊
