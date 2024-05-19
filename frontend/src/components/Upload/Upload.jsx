@@ -20,7 +20,7 @@ const Upload = () => {
         setLoading(true); // Set loading to true when submitting
 
         try {
-            const response = await axios.post(import.meta.ENV.VITE_BACKEND_URL, form);
+            const response = await axios.post(`${import.meta.ENV.VITE_BACKEND_URL}`, form);
             setOutput(response.data);
             setShowResults(true);
         } catch (error) {
