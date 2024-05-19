@@ -16,7 +16,7 @@ const Upload = () => {
             alert("Please fill out all fields!");
             return;
         }
-        
+
         event.preventDefault();
         let form = new FormData();
 
@@ -28,7 +28,7 @@ const Upload = () => {
         console.log(url);
 
         try {
-            const response = await axios.post(`url`, form);
+            const response = await axios.post(url, form);
             setOutput(response.data);
             setShowResults(true);
         } catch (error) {
