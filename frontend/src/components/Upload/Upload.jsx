@@ -21,7 +21,7 @@ const Upload = () => {
         setLoading(true); // Set loading to true when submitting
 
         try {
-            const response = await axios.post(url, form);
+            const response = await axios.post(`${url}`, form);
             setOutput(response.data);
             setShowResults(true);
         } catch (error) {
