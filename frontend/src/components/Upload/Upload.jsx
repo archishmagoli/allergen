@@ -9,6 +9,7 @@ const Upload = () => {
     const [output, setOutput] = useState('');
     const [showResults, setShowResults] = useState(false);
     const [loading, setLoading] = useState(false); // Add loading state
+    const url = import.meta.env.VITE_BACKEND_URL;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -20,7 +21,7 @@ const Upload = () => {
         setLoading(true); // Set loading to true when submitting
 
         try {
-            const response = await axios.post(`${import.meta.ENV.VITE_BACKEND_URL}`, form);
+            const response = await axios.post(url, form);
             setOutput(response.data);
             setShowResults(true);
         } catch (error) {
