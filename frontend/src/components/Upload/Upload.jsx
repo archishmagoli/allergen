@@ -12,6 +12,11 @@ const Upload = () => {
     const url = import.meta.env.VITE_BACKEND_URL;
 
     const handleSubmit = async (event) => {
+        if (allergy === "" || nutritionLabel === null) {
+            alert("Please fill out all fields!");
+            return;
+        }
+        
         event.preventDefault();
         let form = new FormData();
 
@@ -20,9 +25,10 @@ const Upload = () => {
 
         setLoading(true); // Set loading to true when submitting
 
+        console.log(url);
+
         try {
-            console.log(`${url}`);
-            const response = await axios.post(`${url}`, form);
+            const response = await axios.post(`url`, form);
             setOutput(response.data);
             setShowResults(true);
         } catch (error) {
