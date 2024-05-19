@@ -30,7 +30,7 @@ const Upload = () => {
         try {
             const response = await axios.post(url, form);
             setOutput(response.data);
-            console.log(response.data);
+            // console.log(response.data);
             setShowResults(true);
         } catch (error) {
             console.error(error);
