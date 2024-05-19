@@ -13,8 +13,6 @@ def api():
     allergies = allergies.split(',')
     allergies = [allergy.strip() for allergy in allergies]
 
-    pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-
     # Get the image from the request
     image = request.files['nutritionLabel']
 
@@ -35,7 +33,7 @@ def api():
 
     # Spell checking using TextBlob
     blob = TextBlob(text)
-    corrected_text = blob.correct()
+    corrected_text = str(blob.correct())
 
     allergens_in_label = []
     for allergen in allergies:
@@ -48,4 +46,4 @@ def api():
         return ''
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
